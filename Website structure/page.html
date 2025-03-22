@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="casefile.css">
+    <title>Przychodnia marzeń</title>
+</head>
+<body>
+    <div class="helpme">
+        <div class="panel">
+            <fieldset class="main">
+                <h1>Nasza Misja</h1>
+                Witamy w Przychodni Marzeń. Tylko u nas zostaniesz dokładnie
+                przebadany i tylko u nas nikogo nie odsyłamy bez postawienia diagnozy.
+            </fieldset>
+            <fieldset class="main">
+                <h1>Twoje badania</h1>
+                <ul>
+                    <li>USG</li>
+                    <li>RTG</li>
+                    <li>DVD</li>
+                </ul>
+            </fieldset>
+            <fieldset class="main">
+                <h1>Umów wizytę</h1>
+                <fieldset class="sub">
+                    <legend>Dane wizyty</legend>
+                    <div class="form-row">
+                        <label for="lekarz">Wybierz lekarza:</label>
+                        <select id="lekarz" name="lekarz">
+                            <option value="lekarz1">prof. Stanisław Góźdź</option>
+                            <option value="lekarz2">Gregory House, M.D.</option>
+                            <option value="lekarz3" selected>Potężny minister</option>
+                            <option value="lekarz4">Dr jakub Burski</option>
+                        </select><br><br>
+                    </div>
+            
+                    <div class="form-row">
+                        <label for="data">Wybierz datę:</label>
+                        <input type="date" id="data" name="data" value="2024-05-10"> 
+                    </div>
+            
+                    <div class="form-row">
+                        <label for="telefon">Twój numer telefonu:</label>
+                        <input type="tel" id="telefon" name="telefon" pattern="[0-9]{9}" placeholder="9 cyfrowy numer" maxlength="9" required title="Proszę wprowadzić 9 cyfr">
+                    </div>
+            
+                    <div class="form-row">
+                        <input type="checkbox" id="sms" name="sms" checked>
+                        <label for="sms">Przypomnienie SMS</label>
+                    </div>
+            
+                    <div class="form-row">
+                        <input type="submit" value="Sprawdź dostępność"> 
+                    </div>
+                </fieldset>
+            </fieldset>
+        </div>
+        <div class="panel">
+            <fieldset class="main">
+                <h1>Twoi lekarze</h1>
+                <figure>
+                    <img src="hide-pain-harold.jpg" alt="Lekarz 1">
+                    <figcaption>
+                        Wyleczę ból!<br>
+                        &mdash; prof. Stanisław Góźdź
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="house-md.jpg" alt="Lekarz 1">
+                    <figcaption>
+                        To rak!<br>
+                        &mdash; Gregory House, M.D.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="kardiolog.jpg" alt="Lekarz 1">
+                    <figcaption>
+                        To koniec.<br>
+                        &mdash; Potężny minister
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="dr-jakub-burski.jpg" alt="Lekarz 1">
+                    <figcaption>
+                        Kim on jest bez swoich nóg?<br>
+                        &mdash; Dr Jakub Burski
+                    </figcaption>
+                </figure>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
